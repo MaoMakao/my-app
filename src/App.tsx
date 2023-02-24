@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router";
-import { Link } from "react-router-dom";
 import Main from "./components/Main";
 import News from "./components/News";
 import Profile from "./components/Profile";
@@ -18,9 +17,7 @@ function App() {
         </Routes>
       </Layout>
 
-      <div>
-        <h1>chsito nadpis</h1>
-      </div>
+ 
     </div>
   );
 }

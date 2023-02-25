@@ -10,7 +10,7 @@ const News = () => {
   const getNews = async () => {
     try {
       const result = await axios.get(
-        `https://jsonplaceholder.typicode.com/posts?_page=${res.length/10+1}&_limit=10`
+        `https://jsonplaceholder.typicode.com/posts?_page=${Math.ceil(res.length/10+1)}&_limit=10`
       );
       setRes([...res, ...result.data]);
       console.log(result);
